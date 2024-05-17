@@ -76,8 +76,8 @@ input_df = pd.DataFrame({
     'ST_SLope': [ST_Slope]
 })
 
-df = df[['Age', 'Gender', 'ChestPainType','RestingBP', 'Cholesterol', 'FastingBS', 'RestingECG','MaxHR','ExerciseAngina','Oldpeak','ST_SLope']]
-result_df = pd.concat([df, input_df])
+train_df = df[['Age', 'Gender', 'ChestPainType','RestingBP', 'Cholesterol', 'FastingBS', 'RestingECG','MaxHR','ExerciseAngina','Oldpeak','ST_SLope']]
+result_df = pd.concat([train_df, input_df])
 
 
 ######
